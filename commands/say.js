@@ -7,7 +7,7 @@ module.exports = {
     const message = context.arguments.join(' ')
 
     const prefix = {
- translate: '[%s%s%s%s][%s] ',
+ translate: '[%s%s%s%s] ',
       bold: true,
       color: 'white',
       with: [
