@@ -15,7 +15,6 @@ module.exports = {
           { color: 'aqua', text: 'Boyfriend' },
           { color: 'dark_red', text: 'Bot' },
           { color: 'black', text: 'X' },
-        { color: 'green', text: 'Console'},
               ]
     }
 
