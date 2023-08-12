@@ -124,7 +124,7 @@ bot.on('login', async () => {
   
       message += args.join(' ')
   
-      sendChat('FNFBoyfriendBotX 4.0 rewrite better')
+      sendChat('join the FNFBoyfriendBot discord for more features')
   
       resolve()
   
