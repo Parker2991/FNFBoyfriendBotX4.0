@@ -2,7 +2,7 @@ const urban = require('urban-dictionary')
 
 module.exports = {
   name: 'urban',
-
+hashOnly: true,
   async execute (context) {
     const source = context.source
     const args = context.arguments

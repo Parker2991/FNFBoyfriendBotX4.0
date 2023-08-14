@@ -3,7 +3,7 @@
   "bots": [
 {
       "host": "kaboom.pw",
-      "username": "FNFBoyfriendBotX",
+  
       "version":"1.20.1",
       "reconnectDelay": 6000,
 
@@ -22,7 +22,7 @@
    {
       "host": "kaboom.fusselig.xyz",
       "version":"1.20.1",
-      "username": "FNFBoyfriendBotX",
+     
       "reconnectDelay": 6000,
 
       "commands": {
@@ -40,7 +40,7 @@
     {
       "host": "chipmunk.land",
       "version":"1.20.1",
-      "username": "FNFBoyfriendBotX",
+
       "reconnectDelay": 6000,
 
       "commands": {

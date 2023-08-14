@@ -5,10 +5,10 @@ const path = require('path')
 
 function createBot(options = {}) {
   const bot = new EventEmitter()
-
+const randomstring = require('randomstring')
   // Set some default values in options
   options.host ??= 'localhost'
-  options.username ??= 'Player'
+  options.username ??= randomstring.generate(6)
   options.hideErrors ??= true // HACK: Hide errors by default as a lazy fix to console being spammed with them
 
   bot.options = options
@@ -50,5 +50,18 @@ function createBot(options = {}) {
 
   return bot
 }
+const bot = new EventEmitter()
+
+bot.on('end', (reason) => {
+  log(`Disconnected: ${reason}`)
+  
+  channel.send(`Disconnected: ${reason}`)
+
+  client.off('messageCreate', messageCreate)
+  bot.removeAllListeners()
+
+  setTimeout(() => createBot(host, port, channelId, client), 1000 * 7)
+})
+
 
 module.exports = createBot
